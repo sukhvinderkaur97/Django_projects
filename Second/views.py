@@ -5,5 +5,3 @@ def xyz(request):
 
 def abc(request):
     return render(request, 'b.html')
-def bcd(request):
-    return render(request, 'index.htm')
