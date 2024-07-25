@@ -1,11 +1,132 @@
 {% load static %}
-<html>
-    <head>
-        <title>First</title>
-        <link rel = "stylesheet" href = "{% static "style.css" %}">
-    </head>
-        <body>
-            <h1>Welcome to Django</h1>
-            </body>
-            </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- custom css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="{% static "style.css" %}">
+    {% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+</head>
+<body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="{% static "images/logo.png" %}" alt="">
+        </a>
+
+        <nav class="navbar">
+            <div id="close" class="fas fa-times"></div>
+
+            <a href="#home" class="nav_item">home</a>
+            <a href="#about" class="nav_item">about</a>
+            <a href="#" class="nav_item">menu</a>
+            <a href="#" class="nav_item">order</a>
+            <a href="#" class="nav_item">catering</a>
+            <a href="#" class="nav_item">locations</a>
+
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home">
+
+        <div class="vl"></div>
+
+        <div class="content">
+            <h1 class="title">fresh <span>coffee</span> in the <span>morning</span> </h1>
+            <p class="description"><b>Coffee, because bad mornings deserve a second chance.</b></p>
+            <a href="#" class="btn">DOWNLOAD APP</a>
+        </div>
+
+        <div class="icons">
+            <img src="{% static "images/facebook.png" %}">
+            <img src="{% static "images/instagram.png" %}">
+            <img src="{% static "images/twitter.png" %}">
+        </div>
+
+        <div class="image">
+            <img src="{% static "images/coffee2.png" %}">
+        </div>
+
+    </section>
+
+
+    <!-- home section ends -->
+    <!--about section starts-->
+    <section class="about">
+
+        <div class="img1">
+            <img src="{% static "images/coffee5.jpg" %}">
+        </div>
         
+        <div class="cont1">
+            <h1 class="heading">Our Story</h1>
+            <hr>
+            <br>
+            <p class="story">Since 2012, we have been serving our customers with a simple motto: "You deserve more than the average café." Whether you're enjoying breakfast or happy hour, we always guarantee a cozy and friendly ambiance, excellent customer service, quality food, and beverages all day. We encourage breakfast for dinner and mimosas all weekend long.
+            <br><br>We've quickly become a local favorite with our fantastic coffee, juices, smoothies, salads, sandwiches, pasta, wine, beers, and more! We are open seven days a week and have become the it place for your weekend brunch. We focus on finding gourmet ingredients, carefully curated and fresh. These ingredients make every item on our menu taste fresh and flavorful. </p>
+            <a href="#" class="btn1">KNOW MORE</a>
+        </div>
+    </section>
+
+    <section class="menu">
+        <h1>Menu</h1>
+        <div class="all-products">
+            <div class="products">
+                <img src="{% static "images/oat-milk-latte.jpg" %}">
+                <div class="product-info">
+                   <h4 class="product-title">Oat Milk Latte
+                   </h4>
+                   <p class="price">$55</p>
+                   <a class="pbtn" href="#">Order Now</a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="{% static "images/iced-americano.jpg" %}">
+                <div class="product-info">
+                   <h4 class="product-title">Iced Americano
+                   </h4>
+                   <p class="price">$60</p>
+                   <a class="pbtn" href="#">Order Now</a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="{% static "images/iced mocha.jpg" %}">
+                <div class="product-info">
+                   <h4 class="product-title">Iced Mocha
+                   </h4>
+                   <p class="price">$50</p>
+                   <a class="pbtn" href="#">Order Now</a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="{% static "images/iced coffee.webp" %}">
+                <div class="product-info">
+                   <h4 class="product-title">Iced Coffee
+                   </h4>
+                   <p class="price">$75</p>
+                   <a class="pbtn" href="#">Order Now</a>
+                </div>
+            </div>
+            <a href="#" class="btn2">VIEW ALL</a>
+        </div>
+    </section>
+</body>
+</html>
