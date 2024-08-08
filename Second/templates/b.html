@@ -3,6 +3,24 @@
         <title>First</title>
     </head>
         <body>
-            <font color = red><h1>Welcome to MMDU</h1></font>
+            <table border="1">
+
+                <tr>
+                    <th>Roll no</th>
+                    <th>Fname</th>
+                    <th>Lname</th>
+                    </tr>
+            
+
+{%for b in std%}
+{% if b.Rollno == 634 %}
+<tr>
+    <td>{{b.Rollno}}</td>
+    <td>{{b.fname}}</td>
+    <td>{{b.lname}}</td>
+    </tr>
+    {%endif%}
+{%endfor%}
+</table>
             </body>
             </html>
